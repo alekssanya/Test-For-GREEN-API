@@ -14,3 +14,4 @@ function startMicroservice(serviceName) {
         }
     )
 }
+exec('npm i')
