@@ -9,9 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.0.2"
-  },
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }
