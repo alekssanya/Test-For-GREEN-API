@@ -9,7 +9,8 @@ async function consoleInput() {
     while (true) {
         const num = prompt('Введите число: ');
         console.log(num)
-        await sendNumber(num)
+        let res = await sendNumber(num)
+        console.log(JSON.parse(res))
     }
 }
 consoleInput()
@@ -52,6 +53,7 @@ async function sendNumber(num) {
             number: num,
         })
     })
+    return res
 }
 
 

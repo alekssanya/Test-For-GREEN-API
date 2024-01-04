@@ -37,7 +37,7 @@ async function receiveMessage() {
 app.post('/', (req, res) => {
     sendMessage(req.body.number)
     console.log(req.body.number)
-    res.send('post')
+    return res.status(200).send({message: "Число передано в m1"})
 })
 
 async function start() {

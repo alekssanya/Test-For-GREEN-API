@@ -11,6 +11,8 @@ const portM2 = 8002
 let firstProccessIsEnd = false
 let userURLRabbitMQ
 
+exec("npm i")
+
 rl.question("Введите URL RabbitMQ или нажмите Enter: ", function (rabbitURL) {
     let userURLRabbitMQ = rabbitURL
     startMicroservice("m1")
